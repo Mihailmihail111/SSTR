@@ -161,15 +161,16 @@
         padding-left: 8px;
     }
 
-    #resource_work_section{
-        padding-bottom: 85px;
-    }
 
     .resource_work_slider_wrap{
-        margin-top: 25px;
-        margin-bottom: 35px;
+        margin-top: 12px;
+        margin-bottom: 4px;
         .swiper_pagination{
             margin-top: 41px;
+            margin-bottom: 35px;
+        }
+        .swiper-pagination-bullet{
+            margin: 0 5px;
         }
     }
     .resource_work_slide_img{
@@ -347,11 +348,11 @@
 
     #libra_section{
         padding-top: 84px;
-        padding-bottom: 77px;
     }
 
     .libra_wrap{
         background: url(~@/assets/images/bg_logo.svg) no-repeat center top;
+        padding-bottom: 77px;
     }
 
     .libra_h1{
