@@ -10,7 +10,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap' }
     ]
   },
   /*
@@ -34,6 +35,17 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  //ГЛОБАЛЬНИЙ css
+  css: [
+    {
+      src: '~assets/css/reset.css',
+      lang: "css"
+    },
+    {
+      src: '~assets/css/style.scss',
+      lang: "scss"
+    }
+  ],
 }
 
