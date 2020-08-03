@@ -8,7 +8,6 @@
                             <div class="main_slider_img">
                                 <img src="@/assets/images/main_img.jpg" alt="">
                             </div>
-                            <div class="main_slider_text"><p>Successful Stock Trading Resource</p></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
@@ -16,7 +15,6 @@
                             <div class="main_slider_img">
                                 <img src="@/assets/images/main_img2.jpg" alt="">
                             </div>
-                            <div class="main_slider_text"><p>Successful Stock Trading Resource</p></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
@@ -24,7 +22,6 @@
                             <div class="main_slider_img">
                                 <img src="@/assets/images/main_img3.jpg" alt="">
                             </div>
-                            <div class="main_slider_text"><p>Successful Stock Trading Resource</p></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
@@ -32,10 +29,10 @@
                             <div class="main_slider_img">
                                 <img src="@/assets/images/main_img4.jpg" alt="">
                             </div>
-                            <div class="main_slider_text"><p>Successful Stock Trading Resource</p></div>
                         </div>
                     </swiper-slide>
                 </swiper>
+                <div class="main_slider_text"><p>Successful Stock Trading Resource</p></div>
             </div>
         </div>
     </section>

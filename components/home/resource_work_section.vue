@@ -11,11 +11,6 @@
                                 <img src="@/assets/images/resource_work_img1.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -25,11 +20,6 @@
                                 <img src="@/assets/images/resource_work_img2.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -39,11 +29,6 @@
                                 <img src="@/assets/images/resource_work_img3.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -53,11 +38,6 @@
                                 <img src="@/assets/images/resource_work_img4.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -67,11 +47,6 @@
                                 <img src="@/assets/images/resource_work_img5.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -81,14 +56,14 @@
                                 <img src="@/assets/images/resource_work_img6.jpg" alt="">
                             </div>
                             <div class="swiper_pagination" slot="pagination"></div>
-                            <div class="resource_work_text">
-                                <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
-                                <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
-                                <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
-                            </div>
                         </div>
                     </swiper-slide>
                 </swiper>
+                <div class="resource_work_text">
+                    <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
+                    <p>Трансляция онлайн торгов нашими брокерами с офиса, реальные ставки и зароботки нашего ресурса</p>
+                    <p>Графики идут с задержкой в 3 секунды, для правильной корректировки</p>
+                </div>
             </div>
         </div>
     </section>

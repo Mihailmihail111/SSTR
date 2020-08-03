@@ -56,6 +56,9 @@
             padding: 0;
         }
     }
+    .main_section{
+        position: relative;
+    }
     .main_slider{
         position: relative;
         &::before{
@@ -89,6 +92,7 @@
         top: 53px;
         box-sizing: border-box;
         padding: 0 25px;
+        z-index: 10;
     }
 
     #what_sstr_section{
@@ -167,10 +171,9 @@
         margin-bottom: 4px;
         .swiper_pagination{
             margin-top: 41px;
-            margin-bottom: 35px;
         }
         .swiper-pagination-bullet{
-            margin: 0 5px;
+            margin: 0 5px !important;
         }
     }
     .resource_work_slide_img{
@@ -190,10 +193,14 @@
     }
     .swiper-pagination-bullet{
         opacity: 1;
-        background: #424242;
+        background: #424242 !important;
     }
     .swiper-pagination-bullet-active{
-        background: #fff;
+        background: #fff !important;
+    }
+
+    #resource_work_section{
+        margin-bottom: 84px;
     }
     
     .resource_work_text{
@@ -201,7 +208,7 @@
         line-height: 24px;
         text-align: center;
         color: #828282;
-        background: url(~@/assets/images/bg_logo.svg) no-repeat center bottom -10px;
+        background: url(~@/assets/images/bg_logo.svg) no-repeat center bottom;
         p{
             margin-bottom: 24px;
         }
