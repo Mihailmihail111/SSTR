@@ -171,6 +171,7 @@
         margin-bottom: 4px;
         .swiper_pagination{
             margin-top: 41px;
+            margin-bottom: 35px;
         }
         .swiper-pagination-bullet{
             margin: 0 5px !important;
