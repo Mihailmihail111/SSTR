@@ -10,7 +10,6 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img1.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -19,7 +18,6 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img2.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -28,7 +26,6 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img3.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -37,7 +34,6 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img4.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -46,7 +42,6 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img5.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -55,9 +50,9 @@
                             <div class="resource_work_slide_img">
                                 <img src="@/assets/images/resource_work_img6.jpg" alt="">
                             </div>
-                            <div class="swiper_pagination" slot="pagination"></div>
                         </div>
                     </swiper-slide>
+                    <div class="swiper_pagination" slot="pagination"></div>
                 </swiper>
                 <div class="resource_work_text">
                     <p> Реальное время - трансляция графиков “ТОР” валютных пар (USD, EUR, BTC, ETH)</p>
@@ -91,7 +86,7 @@ export default {
                 },
             }
         }
-    }
+    },
 
 };
 
