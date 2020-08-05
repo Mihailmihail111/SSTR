@@ -8,7 +8,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p></p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img1.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img1.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -16,7 +18,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p>Результаты ставок</p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img2.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img2.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -24,7 +28,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p>Currency exchange</p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img3.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img3.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -32,7 +38,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p>Money transfers</p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img4.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img4.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -40,7 +48,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p>Нами уже зарезервировано 0,2531697%, акций Libra</p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img5.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img5.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>
@@ -48,7 +58,9 @@
                         <div class="resource_work_slide">
                             <div class="resource_work_slide_h1"><p>Выплатная таблица дивидендов нашим Ационерам & Инвесторам</p></div>
                             <div class="resource_work_slide_img">
-                                <img src="@/assets/images/resource_work_img6.jpg" alt="">
+                                <a href="">
+                                    <img src="@/assets/images/resource_work_img6.jpg" alt="">
+                                </a>
                             </div>
                         </div>
                     </swiper-slide>

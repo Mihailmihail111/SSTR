@@ -9,10 +9,10 @@
                     </div>
                     <div class="button_wrap flex flex_c">
                         <div class="button button_active">
-                            <a href="">Вход</a>
+                            <nuxt-link to="/login">Вход</nuxt-link>
                         </div>
                         <div class="button button_arrow">
-                            <a href="">Регистрация</a>
+                            <nuxt-link to="/registration">Регистрация</nuxt-link>
                         </div>
                     </div>
                 </div>

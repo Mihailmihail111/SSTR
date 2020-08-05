@@ -8,9 +8,9 @@
                 <nav>
                     <ul class="flex flex_m flex_sb">
                         <li><a href=""><img src="@/assets/images/logo.svg" alt=""></a></li>
-                        <li><a href=""><img src="@/assets/images/header_icon1.svg" alt=""></a></li>
+                        <li><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
                         <li><a href=""><img src="@/assets/images/header_icon2.svg" alt=""></a></li>
-                        <li><a href=""><img src="@/assets/images/header_icon3.svg" alt=""></a></li>
+                        <li><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
                     </ul>
                 </nav>
             </div>
