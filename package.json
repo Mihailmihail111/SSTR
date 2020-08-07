@@ -13,10 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.12.1",
+    "@nuxtjs/recaptcha": "^0.6.2",
     "nuxt": "^2.0.0",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
-    
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

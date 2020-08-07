@@ -47,5 +47,41 @@ module.exports = {
       lang: "scss"
     }
   ],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/recaptcha',
+    '@nuxtjs/auth',
+  ],
+  recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    siteKey: '6Lc6HK8ZAAAAAL29f6gMqJx6R_ZVxJEq_vnF6InG', // Site key for requests
+    version: 2, // Version
+    size: 'compact' // Size: 'compact', 'normal', 'invisible' (v2)
+  },
+  axios: {
+    proxy: true
+  },
+  proxy: {
+    '/api.php': 'http://media.home/SSTR'
+  },
+  env: {
+    backendUrl: 'http://media.home/SSTR/api.php'
+  },
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login:  { url: '/api.php?method=login', method: 'post', propertyName: 'token' },
+          logout: { url: '/api.php?method=logout', method: 'post' },
+          user:   { url: '/api.php?method=user', method: 'post', propertyName: 'user' }
+        },
+      }
+    }
+  },
 }
-
