@@ -10,6 +10,9 @@
                 <input type="password" name="Password" v-model="form.Password" placeholder="Пароль">
             </div>
             <div class="input_wrap">
+                <recaptcha @error="onError" @expired="onExpired" />
+            </div>
+            <div class="input_wrap">
                 <p class="label">Запомнить меня</p>
                 <input type="checkbox" name="RememberMe" v-model="form.RememberMe" placeholder="Запомнить меня">
             </div>
@@ -45,9 +48,9 @@
             },
             async onSubmit() {
                 try {
-                    //const token = await this.$recaptcha.getResponse()
-                    //var formData = new FormData( this.$refs.formHTML);
-                    //this.form['captcha'] = token;
+                    const token = await this.$recaptcha.getResponse();
+                    var formData = new FormData( this.$refs.formHTML);
+                    this.form['captcha'] = token;
 
                     this.$auth.loginWith('local', {data: this.form}).then((response) => {
                         if (response.data.error != null) {
@@ -55,7 +58,7 @@
                         }
                     })
                     
-                    //await this.$recaptcha.reset()
+                    await this.$recaptcha.reset();
                 } catch (error) {
                     console.log('Login error:', error)
                 }
