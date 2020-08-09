@@ -47,14 +47,6 @@
                 <img src="@/assets/images/user_account_button_icon.svg" alt="">
             </div>
         </div>
-
-        <div class="input_checbox_wrap">
-            <label class="flex flex_m">
-                <input type="checkbox" class="hidden">
-                <div class="input_checbox"></div>
-                <p>Текст чекбокса</p>
-            </label>
-        </div>
     </div>
 </template>
 
@@ -207,30 +199,5 @@
         left: 26px;
         top: 50%;
         transform: translateY(-50%);
-    }
-
-    .input_checbox_wrap{
-        margin: 25px 0;
-        label{
-            cursor: pointer;
-        }
-        input:checked + .input_checbox{
-            background: #fff;
-            transition: 0.3s;
-        }
-        .input_checbox{
-            border: 1px solid #fff;
-            border-radius: 3px;
-            width: 22px;
-            height: 22px;
-            box-sizing: border-box;
-            transition: 0.3s;
-        }
-        p{
-            font-size: 15px;
-            text-align: left;
-            margin-left: 10px;
-            color: #fff;
-        }
     }
 </style>
