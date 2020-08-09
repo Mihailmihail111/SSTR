@@ -23,6 +23,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'vuelidate'
+    ],
     /*
     ** Run ESLint on save
     */
@@ -52,6 +55,9 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/recaptcha',
     '@nuxtjs/auth',
+  ],
+  plugins: [
+    {src: '~/plugins/vuelidate'}
   ],
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
