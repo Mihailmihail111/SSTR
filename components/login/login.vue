@@ -42,7 +42,7 @@
 
         mounted() {
             if (this.$store.state.auth.loggedIn) {
-                window.location.href = '/'
+                this.$router.push({ path: 'lk' });
             }
         },
         methods: {

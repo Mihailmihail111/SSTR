@@ -2,7 +2,7 @@
     <div>
         <div class="account_h1"><p>{{ $store.state.translations.main_page_name }}</p></div>
         <ul class="flex flex_m flex_sb">
-            <li><a href=""><img src="" alt="Личные данные"></a></li>
+            <li><nuxt-link to="/personalinfo">{{ $store.state.translations.lk_page_href_personal }}</nuxt-link></li>
         </ul>
     </div>
 </template>
@@ -14,6 +14,11 @@
                 errors: [],
                 backendUrl: process.env.backendUrl
             };
+        },
+        mounted() {
+            if (!this.$store.state.auth.loggedIn) {
+                this.$router.push({ path: 'login' });
+            }
         },
     };
 </script>
