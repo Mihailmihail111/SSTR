@@ -55,6 +55,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/recaptcha',
     '@nuxtjs/auth',
+    '@nuxtjs/toast',
   ],
   plugins: [
     {src: '~/plugins/vuelidate'}
@@ -63,7 +64,7 @@ module.exports = {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
     siteKey: '6Lc6HK8ZAAAAAL29f6gMqJx6R_ZVxJEq_vnF6InG', // Site key for requests
     version: 2, // Version
-    size: 'compact' // Size: 'compact', 'normal', 'invisible' (v2)
+    size: 'normal' // Size: 'compact', 'normal', 'invisible' (v2)
   },
   axios: {
     proxy: true
@@ -72,7 +73,7 @@ module.exports = {
     '/api.php': 'http://media.home/SSTR'
   },
   env: {
-    backendUrl: 'http://media.home/SSTR/api.php'
+    backendUrl: '/api.php'
   },
   vue: {
     config: {

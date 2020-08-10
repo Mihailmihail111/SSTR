@@ -36,7 +36,7 @@
             return {
                 errors: [],
                 form: {},
-                env: process.env.backendUrl,
+                backendUrl: process.env.backendUrl,
             };
         },
 
@@ -47,7 +47,7 @@
         },
         methods: {
             onError (error) {
-                alert('Каптча не прошла проверку: ' + error);
+                this.$toast.error('Каптча не прошла проверку: ' + error);
             },
             async onSubmit() {
                 try {
@@ -57,7 +57,7 @@
 
                     this.$auth.loginWith('local', {data: this.form}).then((response) => {
                         if (response.data.error != null) {
-                            alert (response.data.error);
+                            this.$toast.error(response.data.error);
                         }
                     })
                     

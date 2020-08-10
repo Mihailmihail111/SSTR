@@ -36,7 +36,7 @@
                     Password: "",
                     repeat_password: ""
                 },
-                env: process.env.backendUrl,
+                backendUrl: process.env.backendUrl,
             };
         },
 
@@ -49,33 +49,33 @@
             async onSubmit() {
                 try {
                     if (this.form.Login.length == 0) {
-                        alert("Поле пользователь не может быть пустым");
+                        this.$toast.error("Поле пользователь не может быть пустым");
                         return;
                     }
                     if (this.form.Password.length == 0) {
-                        alert("Поле пользователь не может быть пустым");
+                        this.$toast.error("Поле пользователь не может быть пустым");
                         return;
                     }
                     if (this.form.Password != this.form.repeat_password) {
-                        alert("Пароли не совпадают");
+                        this.$toast.error("Пароли не совпадают");
                         return;
                     }
                     var formData = new FormData( this.$refs.formHTML);
 
-                    this.$axios.$post('/api.php?method=register', {
+                    this.$axios.$post(this.backendUrl + '?method=register', {
                         data: this.form,
                     })
                     .then((response) => {
                         if (response['message'] == 'success') {
                             this.$auth.loginWith('local', {data: this.form}).then((response) => {
                                 if (response.data.error != null) {
-                                    alert (response.data.error);
+                                    this.$toast.error(response.data.error);
                                 }
                             });
                         }
 
                         if (response['error'] != null) {
-                            alert(response['error']);
+                            this.$toast.error(response['error']);
                         }
                     })
                     .catch((error) => {
