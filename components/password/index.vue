@@ -1,8 +1,8 @@
 <template>
-    <div class="wrapper login">
+    <div class="wrapper password">
         <header_header/>
         <div class="body inside">
-            <login/>
+            <password/>
         </div>
         <footer_footer/>
     </div>
@@ -11,19 +11,19 @@
 <script>
     import header_header from '~/components/global/lkheader.vue'
     import footer_footer from '~/components/global/lkfooter.vue'
-    import login from '~/components/login/login.vue'
+    import password from '~/components/password/password.vue'
 
     export default {
 		components: {
             header_header,
             footer_footer,
-			login,
+			password,
     	}
     };
 </script>
 
 <style lang="scss">
-    .login{
+    .password{
         .body.inside{
             margin-top: 30px;
             margin-bottom: 30px;

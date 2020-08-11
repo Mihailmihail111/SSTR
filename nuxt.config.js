@@ -56,6 +56,13 @@ module.exports = {
     '@nuxtjs/recaptcha',
     '@nuxtjs/auth',
     '@nuxtjs/toast',
+    [
+      'nuxt-env', {
+      keys: [
+        { key: 'BACKEND_URL', default: '/api.php' }
+      ]
+    }
+],
   ],
   plugins: [
     {src: '~/plugins/vuelidate'}
@@ -71,9 +78,6 @@ module.exports = {
   },
   proxy: {
     '/api.php': 'http://media.home/SSTR'
-  },
-  env: {
-    backendUrl: '/api.php'
   },
   vue: {
     config: {

@@ -1,9 +1,11 @@
 <template>
     <div>
         <div class="account_h1"><p>{{ $store.state.translations.main_page_name }}</p></div>
-        <ul class="flex flex_m flex_sb">
-            <li><nuxt-link to="/personalinfo">{{ $store.state.translations.lk_page_href_personal }}</nuxt-link></li>
-        </ul>
+        <div class="button_wrap flex flex_c">
+            <div class="button button_active">
+                <nuxt-link to="/personalinfo">{{ $store.state.translations.lk_page_href_personal }}</nuxt-link>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -12,7 +14,6 @@
         data() {
             return {
                 errors: [],
-                backendUrl: process.env.backendUrl
             };
         },
         mounted() {

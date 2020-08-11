@@ -36,7 +36,6 @@
                     Password: "",
                     repeat_password: ""
                 },
-                backendUrl: process.env.backendUrl,
             };
         },
 
@@ -62,7 +61,7 @@
                     }
                     var formData = new FormData( this.$refs.formHTML);
 
-                    this.$axios.$post(this.backendUrl + '?method=register', {
+                    this.$axios.$post(this.$env.BACKEND_URL + '?method=register', {
                         data: this.form,
                     })
                     .then((response) => {
