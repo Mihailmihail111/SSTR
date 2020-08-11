@@ -7,7 +7,9 @@
             <div class="header">
                 <nav>
                     <ul class="flex flex_m flex_sb">
-                        <li><a href=""><img src="@/assets/images/logo.svg" alt=""></a></li>
+                        <li>
+                            <a href="" class="active"><img src="@/assets/images/logo.svg" alt=""></a>
+                        </li>
                         <li><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
                         <li><a href=""><img src="@/assets/images/header_icon2.svg" alt=""></a></li>
                         <li><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
@@ -55,6 +57,12 @@ export default {
         padding: 24px 15px;
         box-sizing: border-box;
         background: #0F0F0F;
+        a{
+            opacity: 0.5;
+            &.active{
+                opacity: 1;
+            }
+        }
     }
     .header_fix{
         display: none;

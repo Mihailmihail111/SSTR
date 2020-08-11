@@ -13,6 +13,7 @@
 
     <video_pop_up/>
     <news_pop_up/>
+    <info_pop_up/>
   </div>
 </template>
 
@@ -30,6 +31,7 @@
     import partners_section from '~/components/home/partners_section.vue'
     import video_pop_up from '~/components/pop_up/video_pop_up.vue'
     import news_pop_up from '~/components/pop_up/news_pop_up.vue'
+    import info_pop_up from '~/components/pop_up/info_pop_up.vue'
     export default {
         components: {
             header_header,
@@ -43,7 +45,8 @@
             news_section,
             partners_section,
             video_pop_up,
-            news_pop_up
+            news_pop_up,
+            info_pop_up
         }
     }
 </script>

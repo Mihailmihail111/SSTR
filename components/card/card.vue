@@ -56,11 +56,11 @@
         transform-origin: 50%;
     }
     .card_front{
-        background: url(~@/assets/images/card_front.jpg) no-repeat center 0;
+        background: url(~@/assets/images/card/card_front.svg) no-repeat center 0;
     }
     .card_back{
         transform: rotateY(180deg);
-        background: url(~@/assets/images/card_back.png) no-repeat center 0;
+        background: url(~@/assets/images/card/card_back.svg) no-repeat center 0;
     }
     .card_nick_front{
         font-size: 13px;
