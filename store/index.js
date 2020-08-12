@@ -18,7 +18,7 @@ export const mutations = {
 
 export const actions = {
     async nuxtServerInit({ commit }) {
-        let {data} = await this.$axios.$post(this.$env.BACKEND_URL + '?method=translations');
+        let {data} = await this.$axios.$post('/api.php?method=translations');
         commit('SET_TRANSLATIONS', data)
     }
 }

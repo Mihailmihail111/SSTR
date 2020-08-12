@@ -55,6 +55,18 @@
                 <p>Текст чекбокса</p>
             </label>
         </div>
+
+        <div class="select_wrap active">
+            <div class="select">
+                <p>select 0</p>
+            </div>
+            <div class="select_drop">
+                <p>select 1</p>
+                <p>select 2</p>
+                <p>select 3</p>
+                <p>select 4</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -66,6 +78,9 @@
 
 
 <style lang="scss">
+.style_block{
+    padding-bottom: 350px;
+}
 
     .account_h1{
         font-size: 28px;
@@ -231,6 +246,52 @@
             text-align: left;
             margin-left: 10px;
             color: #fff;
+        }
+    }
+
+    .select_wrap{
+        position: relative;
+        text-align: left;
+        &.active{
+            .select_drop{
+                overflow: visible;
+                z-index: 10;
+                opacity: 1;
+            }
+        }
+    }
+
+    .select{
+        width: 100%;
+        max-width: 100%;
+        background: #fff;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 12px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .select_drop{
+        position: absolute;
+        left: 0;
+        top: 105%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 25px;
+        border-radius: 5px;
+        background: #fff;
+        z-index: 10;
+        overflow: hidden;
+        z-index: -10;
+        opacity: 0;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+        p{
+            cursor: pointer;
+            padding: 10px 0;
         }
     }
 </style>

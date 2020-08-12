@@ -61,11 +61,19 @@
             };
         },
         async fetch() {
-            var userdata = await this.$axios.$post(this.$env.BACKEND_URL + '?method=userdata&action=get');
-            var languages = await this.$axios.$post(this.$env.BACKEND_URL + '?method=langs');
+            var userdata = await this.$axios.$get('/api.php?method=userdata&action=get');
+            var languages = await this.$axios.$get('/api.php?method=langs');
 
-            this.userdata = userdata.data;
-            this.languages = languages.data;
+            if (!userdata.empty) {
+                this.userdata = userdata.data;
+            } else {
+                this.userdata = [];
+            }
+            if (!languages.empty) {
+                this.languages = languages.data;
+            } else {
+                this.languages = [];
+            }
         },
         mounted() {
             if (!this.$store.state.auth.loggedIn) {
