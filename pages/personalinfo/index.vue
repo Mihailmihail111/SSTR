@@ -51,6 +51,9 @@
                 <div class="account_button">
                     <button v-on:click="changePassword()" class="button">Изменить пароль</button> 
                 </div>
+                <div class="account_button">
+                    <button v-on:click="addCard()" class="button">Добавить карту</button> 
+                </div>
             </div>
         </div>
         <footer_footer/>
@@ -77,7 +80,7 @@
         },
         async asyncData (context) {
             var userdata = await context.$axios.$get('/api.php?method=userdata&action=get');
-            var cards = await context.$axios.$get('/api.php?method=cards&action=get');
+            var cards = await context.$axios.$get('/api.php?method=cards&action=list');
             var languages = await context.$axios.$get('/api.php?method=langs');
 
             return {
@@ -88,7 +91,10 @@
         },
         methods: {
             changePassword () {
-                this.$router.push({ path: 'password' });
+                this.$router.push({ path: '/password' });
+            },
+            addCard () {
+                this.$router.push({ path: '/creditcard' });
             },
             async onSubmit() {
                 this.$axios.$post(this.$env.BACKEND_URL + '?method=userdata&action=update', this.userdata)

@@ -55,9 +55,7 @@
                     }
                     var formData = new FormData( this.$refs.formHTML);
 
-                    this.$axios.$post(this.$env.BACKEND_URL + '?method=register', {
-                        data: this.form,
-                    })
+                    this.$axios.$post(this.$env.BACKEND_URL + '?method=register', this.form)
                     .then((response) => {
                         if (response['message'] == 'success') {
                             this.$auth.loginWith('local', {data: this.form}).then((response) => {
