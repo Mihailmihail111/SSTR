@@ -41,7 +41,7 @@
 
         <div class="account_button user_account_button">
             <a href="">
-                Мой профиль
+                <p>Мой профиль</p>
             </a>
             <div class="user_account_button_icon">
                 <img src="@/assets/images/user_account_button_icon.svg" alt="">
@@ -147,8 +147,8 @@
     .account_button{
         margin-bottom: 15px;
         a, button{
-            background: #000000;
-            border: 1px solid rgba(0, 0, 0, 0.5);
+            background: #828282;
+            border: 1px solid rgba($color: #828282, $alpha: 0.5);
             box-sizing: border-box;
             border-radius: 5px;
             font-weight: 500;
@@ -210,7 +210,13 @@
         position: relative;
         a{
             font-size: 20px;
-            padding: 24px 50px;
+            padding: 10px 50px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            border-radius: 41px;
         }
         img{
             display: block;

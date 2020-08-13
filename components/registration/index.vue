@@ -9,8 +9,8 @@
 </template>
 
 <script>
-    import header_header from '~/components/global/lkheader.vue'
-    import footer_footer from '~/components/global/lkfooter.vue'
+    import header_header from '~/components/global/header.vue'
+    import footer_footer from '~/components/global/footer.vue'
     import registration from '~/components/registration/registration.vue'
 
     export default {

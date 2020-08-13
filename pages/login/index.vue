@@ -9,6 +9,7 @@ import login from '~/components/login'
     export default {
         components: {
             login,
-        }
+        },
+        middleware: 'authenticated'
     }
 </script>

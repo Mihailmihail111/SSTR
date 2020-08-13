@@ -65,7 +65,8 @@ module.exports = {
 ],
   ],
   plugins: [
-    {src: '~/plugins/vuelidate'}
+    {src: '~/plugins/vuelidate'},
+    {src: '~/plugins/auth.js'}
   ],
   recaptcha: {
     hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)

@@ -9,6 +9,7 @@ import password from '~/components/password'
     export default {
         components: {
             password,
-        }
+        },
+        middleware: 'authenticated'
     }
 </script>

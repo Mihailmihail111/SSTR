@@ -8,11 +8,13 @@
                 <nav>
                     <ul class="flex flex_m flex_sb">
                         <li>
-                            <a href="" class="active"><img src="@/assets/images/logo.svg" alt=""></a>
+                            <a href="/" :class="{'nuxt-link-active':this.$route.name=='index'}"><img src="@/assets/images/logo.svg" alt=""></a>
                         </li>
-                        <li><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
+                        <li v-if="!this.$store.state.auth.loggedIn"><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
+                        <li v-if="this.$store.state.auth.loggedIn"><nuxt-link to="/lk"><img src="@/assets/images/header_icon4.svg" alt=""></nuxt-link></li>
                         <li><a href=""><img src="@/assets/images/header_icon2.svg" alt=""></a></li>
-                        <li><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
+                        <li v-if="!this.$store.state.auth.loggedIn"><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
+                        <li v-if="this.$store.state.auth.loggedIn"><nuxt-link to="/logout"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
                     </ul>
                 </nav>
             </div>
@@ -29,7 +31,10 @@ export default {
     data() {
         return{
             scrollPosition: null,
-            
+            ismain: (this.$route.name == "index")? true: false,
+            islk: (this.$route.name == "lk")? true: false,
+            isregister: (this.$route.name == "lk")? true: false,
+            islogin: (this.$route.name == "lk")? true: false,
         }
     },
     methods: {
@@ -59,7 +64,7 @@ export default {
         background: #0F0F0F;
         a{
             opacity: 0.5;
-            &.active{
+            &.nuxt-link-active{
                 opacity: 1;
             }
         }

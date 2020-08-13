@@ -9,6 +9,7 @@ import registration from '~/components/registration'
     export default {
         components: {
             registration,
-        }
+        },
+        middleware: 'authenticated'
     }
 </script>
