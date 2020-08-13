@@ -147,8 +147,8 @@
     .account_button{
         margin-bottom: 15px;
         a, button{
-            background: #000000;
-            border: 1px solid rgba(0, 0, 0, 0.5);
+            background: #828282;
+            border: 1px solid rgba($color: #828282, $alpha: 0.5);
             box-sizing: border-box;
             border-radius: 5px;
             font-weight: 500;
