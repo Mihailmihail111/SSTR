@@ -434,6 +434,14 @@
         padding: 63px 0;
     }
 
+    .main_slider_img{
+        img{
+            height: 330px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
 
 
 
