@@ -10,6 +10,6 @@ import registration from '~/components/registration'
         components: {
             registration,
         },
-        middleware: 'authenticated'
+        middleware: 'notauthenticated'
     }
 </script>

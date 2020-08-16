@@ -10,6 +10,6 @@ import login from '~/components/login'
         components: {
             login,
         },
-        middleware: 'authenticated'
+        middleware: 'notauthenticated'
     }
 </script>
