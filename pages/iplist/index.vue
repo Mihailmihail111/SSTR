@@ -9,7 +9,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>{{ $store.state.translations.addcard_page_header }}</th>
+                            <th>{{ $store.state.translations.ipadd_page_form_name }}</th>
                             <th>{{ $store.state.translations.ipdict_page_table_sum }}</th>
                             <th>{{ $store.state.translations.ipdict_page_table_percent }}</th>
                             <th>{{ $store.state.translations.ipdict_page_table_term }}</th>

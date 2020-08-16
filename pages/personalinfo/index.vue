@@ -97,7 +97,7 @@
                 this.$router.push({ path: '/creditcard' });
             },
             async onSubmit() {
-                this.$axios.$post(this.$env.BACKEND_URL + '?method=userdata&action=update', this.userdata)
+                this.$axios.$post('/api.php?method=userdata&action=update', this.userdata)
                 .then((response) => {
                     if (response['message'] == 'success') {
                         this.$toast.error(this.$store.state.translations.global_success);

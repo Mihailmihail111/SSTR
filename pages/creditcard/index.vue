@@ -81,7 +81,7 @@
         },
         methods: {
             async onSubmit() {
-                this.$axios.$post(this.$env.BACKEND_URL + '?method=cards&action=add', this.data)
+                this.$axios.$post('/api.php?method=cards&action=add', this.data)
                 .then((response) => {
                     if (response['message'] == 'success') {
                         this.$toast.error(this.$store.state.translations.global_success);

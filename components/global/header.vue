@@ -6,16 +6,16 @@
         <div class="inside">
             <div class="header">
                 <nav>
-                    <ul class="flex flex_m flex_sb">
-                        <li>
-                            <a href="/" :class="{'nuxt-link-active':this.$route.name=='index'}"><img src="@/assets/images/logo.svg" alt=""></a>
-                        </li>
-                        <li v-if="!this.$store.state.auth.loggedIn"><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
-                        <li v-if="this.$store.state.auth.loggedIn"><nuxt-link to="/lk"><img src="@/assets/images/header_icon4.svg" alt=""></nuxt-link></li>
-                        <li><a href=""><img src="@/assets/images/header_icon2.svg" alt=""></a></li>
-                        <li v-if="!this.$store.state.auth.loggedIn"><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
-                        <li v-if="this.$store.state.auth.loggedIn"><nuxt-link to="/logout"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
-                    </ul>
+                    <client-only>
+                        <ul class="flex flex_m flex_sb">
+                            <li><a href="/" :class="{'nuxt-link-active':this.$route.name=='index'}"><img src="@/assets/images/logo.svg" alt=""></a></li>
+                            <li v-if="!isAuthenticated"><nuxt-link to="/registration"><img src="@/assets/images/header_icon1.svg" alt=""></nuxt-link></li>
+                            <li v-if="isAuthenticated"><nuxt-link to="/lk"><img src="@/assets/images/header_icon4.svg" alt=""></nuxt-link></li>
+                            <li><a href=""><img src="@/assets/images/header_icon2.svg" alt=""></a></li>
+                            <li v-if="!isAuthenticated"><nuxt-link to="/login"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
+                            <li v-if="isAuthenticated"><nuxt-link to="/logout"><img src="@/assets/images/header_icon3.svg" alt=""></nuxt-link></li>
+                        </ul>
+                    </client-only>
                 </nav>
             </div>
         </div>
@@ -26,15 +26,15 @@
 
 
 <script>
+import { mapGetters } from 'vuex';
 
 export default {
+    computed: {
+        ...mapGetters(['isAuthenticated', 'loggedInUser'])
+    },
     data() {
         return{
             scrollPosition: null,
-            ismain: (this.$route.name == "index")? true: false,
-            islk: (this.$route.name == "lk")? true: false,
-            isregister: (this.$route.name == "lk")? true: false,
-            islogin: (this.$route.name == "lk")? true: false,
         }
     },
     methods: {

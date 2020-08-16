@@ -15,6 +15,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap' }
     ]
   },
+
   /*
   ** Customize the progress bar color
   */
@@ -56,17 +57,12 @@ module.exports = {
     '@nuxtjs/recaptcha',
     '@nuxtjs/auth',
     '@nuxtjs/toast',
-    [
-      'nuxt-env', {
-      keys: [
-        { key: 'BACKEND_URL', default: '/api.php' }
-      ]
-    }
-],
   ],
+  auth: {
+     plugins: [ '~/plugins/auth.js' ]
+  },
   plugins: [
     {src: '~/plugins/vuelidate'},
-    {src: '~/plugins/auth.js'},
     {src: '~/plugins/global.js'},
     {src: '~/plugins/directives.js'}
   ],

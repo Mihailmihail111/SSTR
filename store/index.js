@@ -16,6 +16,15 @@ export const mutations = {
     }
 }
 
+export const getters = {
+    isAuthenticated(state) {
+        return state.auth.loggedIn
+    },
+    loggedInUser(state) {
+        return state.auth.user
+    },
+};
+
 export const actions = {
     async nuxtServerInit({ commit }) {
         let {data} = await this.$axios.$post('/api.php?method=translations');
