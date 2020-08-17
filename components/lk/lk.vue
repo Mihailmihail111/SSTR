@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="account_button user_account_button">
-            <nuxt-link to="/lk">
+            <nuxt-link to="/libra">
                 <p>Libra invest</p>
             </nuxt-link>
             <div class="user_account_button_icon">
