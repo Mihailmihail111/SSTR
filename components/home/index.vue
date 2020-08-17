@@ -111,8 +111,8 @@
         box-sizing: border-box;
         border-top: 4px solid #1D1D1D;
         border-bottom: 4px solid #1D1D1D;
-        padding: 17px 0;
-        padding-bottom: 12px;
+        padding: 17px 0 !important;
+        padding-bottom: 12px !important;
         .swiper-slide{
             width: 200px;
         }
@@ -181,14 +181,8 @@
         }
     }
     .resource_work_slide_img{
-        height: 317px;
-        a{
-            height: 317px;
-        }
         img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 100%;
             border-radius: 8px;
         }
     }
@@ -198,7 +192,7 @@
         text-align: center;
         color: #828282;
         margin-bottom: 14px;
-        min-height: 23px;
+        min-height: 45px;
     }
     .swiper-pagination-bullet{
         opacity: 1;
@@ -444,6 +438,12 @@
             height: 330px;
             width: 100%;
             object-fit: cover;
+        }
+    }
+
+    .partners_img{
+        img{
+            max-width: 100%;
         }
     }
 
