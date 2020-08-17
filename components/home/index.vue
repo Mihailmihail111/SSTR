@@ -181,9 +181,14 @@
         }
     }
     .resource_work_slide_img{
-        
+        height: 317px;
+        a{
+            height: 317px;
+        }
         img{
-            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 8px;
         }
     }
@@ -212,7 +217,7 @@
         line-height: 24px;
         text-align: center;
         color: #828282;
-        background: url(~@/assets/images/bg_logo.svg) no-repeat center bottom;
+        //background: url(~@/assets/images/bg_logo.svg) no-repeat center bottom;
         p{
             margin-bottom: 24px;
         }
@@ -362,7 +367,7 @@
     }
 
     .libra_wrap{
-        background: url(~@/assets/images/bg_logo.svg) no-repeat center top;
+        //background: url(~@/assets/images/bg_logo.svg) no-repeat center top;
         padding-bottom: 77px;
     }
 
