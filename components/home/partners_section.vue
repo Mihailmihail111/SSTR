@@ -4,7 +4,7 @@
             <div class="partners_section">
                 <div class="title_h1"><p>Наши Партнеры</p></div>
                 <div class="partners_img">
-                    <img src="@/assets/images/partners_img.svg" alt="">
+                    <img src="@/assets/images/partners_img.png" alt="">
                 </div>
             </div>
         </div>
