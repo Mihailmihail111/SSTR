@@ -111,8 +111,7 @@
         box-sizing: border-box;
         border-top: 4px solid #1D1D1D;
         border-bottom: 4px solid #1D1D1D;
-        padding: 17px 0 !important;
-        padding-bottom: 12px !important;
+        padding: 15px 0 !important;
         .swiper-slide{
             width: 200px;
         }
@@ -148,6 +147,7 @@
                 height: 100px;
                 background: linear-gradient(0deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
                 z-index: 5;
+                border-radius: 0 0 15px 15px;
             }
             
             
@@ -315,7 +315,7 @@
             width: 100px;
         }
         .swiper-wrapper{
-            padding: 0 15px;
+            padding: 15px 15px;
         }
     }
 
@@ -328,6 +328,7 @@
             bottom: 0;
             width: 100%;
             height: 61px;
+            border-radius: 0 0 17px 17px;
             background: linear-gradient(0deg, #171717 0%, rgba(23, 23, 23, 0) 100%);
         }
     }
