@@ -50,7 +50,7 @@
         },
         middleware: 'authenticated',
         async asyncData (context) {
-            var currency = await context.$axios.$get('/api.php?method=currency');
+            var currency = await context.$axios.$get('/api/currency/');
 
             return {
                 currency: (!currency.empty)?currency.data : [],

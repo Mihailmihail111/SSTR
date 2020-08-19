@@ -79,9 +79,9 @@
             };
         },
         async asyncData (context) {
-            var userdata = await context.$axios.$get('/api.php?method=userdata&action=get');
-            var cards = await context.$axios.$get('/api.php?method=cards&action=list');
-            var languages = await context.$axios.$get('/api.php?method=langs');
+            var userdata = await context.$axios.$get('/api/userdata/');
+            var cards = await context.$axios.$get('/api/cards/');
+            var languages = await context.$axios.$get('/api/langs/');
 
             return {
                 userdata: (!userdata.empty)?userdata.data : [],
@@ -97,10 +97,10 @@
                 this.$router.push({ path: '/creditcard' });
             },
             async onSubmit() {
-                this.$axios.$post('/api.php?method=userdata&action=update', this.userdata)
+                this.$axios.$put('/api/userdata/index.php', this.userdata)
                 .then((response) => {
                     if (response['message'] == 'success') {
-                        this.$toast.error(this.$store.state.translations.global_success);
+                        this.$toast.success(this.$store.state.translations.global_success);
                     }
 
                     if (response['error'] != null) {
@@ -108,6 +108,7 @@
                     }
                 })
                 .catch((error) => {
+                    this.$toast.error(error);
                     console.log(error);
                 });
             },

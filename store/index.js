@@ -1,10 +1,18 @@
 export const state = () => ({
     userID: null,
     timezone: null,
-    translations: {}
+    translations: {},
+    balance: null,
+    deposit: null
 })
 
 export const mutations = {
+    SET_BALANCE (state, value) {
+        state.balance = value
+    },
+    SET_DEPOSIT (state, value) {
+        state.deposit = value
+    },
     SET_USERID (state, value) {
         state.userID = value
     },
@@ -23,11 +31,17 @@ export const getters = {
     loggedInUser(state) {
         return state.auth.user
     },
+    balance(state) {
+        return state.balance
+    },
+    deposit(stete) {
+        return state.deposit
+    }
 };
 
 export const actions = {
     async nuxtServerInit({ commit }) {
-        let {data} = await this.$axios.$post('/api.php?method=translations');
+        let {data} = await this.$axios.$post('/api/translations');
         commit('SET_TRANSLATIONS', data)
     }
 }

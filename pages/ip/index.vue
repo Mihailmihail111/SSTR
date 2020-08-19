@@ -103,7 +103,7 @@
         },
         methods: {
             async onSubmit() {
-                this.$axios.$post('/api.php?method=ip&action=add', this.ipdata)
+                this.$axios.$post('/api/ip/', this.ipdata)
                 .then((response) => {
                     if (response['message'] == 'success') {
                         this.$toast.error(this.$store.state.translations.global_success);

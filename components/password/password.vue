@@ -28,7 +28,7 @@
         },
         methods: {
             async onSubmit() {
-                this.$axios.$post('/api.php?method=userdata&action=password', this.formdata)
+                this.$axios.$put('/api/userdata/index.php?action=password', this.formdata)
                 .then((response) => {
                     if (response['message'] == 'success') {
                         this.$toast.error(this.$store.state.translations.global_success);

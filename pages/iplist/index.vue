@@ -49,7 +49,7 @@
             };
         },
         async asyncData (context) {
-            var iplist = await context.$axios.$get('/api.php?method=ip&action=list');
+            var iplist = await context.$axios.$get('/api/ip/');
 
             return {
                 iplist: (!iplist.empty)?iplist.data : [],

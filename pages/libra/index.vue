@@ -46,7 +46,7 @@
             };
         },
         async asyncData (context) {
-            var balance = await context.$axios.$get('/api.php?method=libra&action=get');
+            var balance = await context.$axios.$get('/api/libra/');
             var d = {
                 balance: (!balance.empty)?balance.data : 0,
                 value: null
@@ -58,12 +58,12 @@
         },
         methods: {
             async onSubmit() {
-                this.$axios.$post('/api.php?method=libra&action=buy', this.data)
+                this.$axios.$post('/api/libra/', this.data)
                 .then((response) => {
                     if (response['message'] == 'success') {
                         this.$toast.success(this.$store.state.translations.global_success);
 
-                        this.$axios.$get('/api.php?method=libra&action=get').then((response) => {
+                        this.$axios.$get('/api/libra/').then((response) => {
                             if (response['message'] == 'success') {
                                 this.data.balance = (!response.empty)?response.data : 0;
                                 this.data.value = null;

@@ -76,7 +76,13 @@ module.exports = {
     proxy: true
   },
   proxy: {
-    '/api.php': 'http://media.home/SSTR'
+    '/api.php': 'http://media.home/SSTR',
+    '/api': {
+      target: 'http://media.home/SSTR/api',
+      pathRewrite: {
+        '^/api' : '/'
+        }
+      }
   },
   vue: {
     config: {
@@ -94,9 +100,9 @@ module.exports = {
     strategies: {
       local: {
         endpoints: {
-          login:  { url: '/api.php?method=login', method: 'post', propertyName: 'token' },
-          logout: { url: '/api.php?method=logout', method: 'post' },
-          user:   { url: '/api.php?method=user', method: 'post', propertyName: 'user' }
+          login:  { url: '/api/login/', method: 'get', propertyName: 'token' },
+          logout: { url: '/api/logout/', method: 'get' },
+          user:   { url: '/api/user/', method: 'get', propertyName: 'user' }
         },
       }
     }
