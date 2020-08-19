@@ -72,10 +72,6 @@
                                 this.data.balance = (!response.empty)?response.data : 0;
                                 this.data.value = null;
                             }
-
-                            if (response['error'] != null) {
-                                this.$toast.error(response['error']);
-                            }
                         })
                         .catch((error) => {
                             if (error.response.data['error'] != null) {

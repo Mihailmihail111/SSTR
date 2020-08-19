@@ -106,14 +106,15 @@
                 this.$axios.$post('/api/ip/', this.ipdata)
                 .then((response) => {
                     if (response['message'] == 'success') {
-                        this.$toast.error(this.$store.state.translations.global_success);
-                    }
-
-                    if (response['error'] != null) {
-                        this.$toast.error(response['error']);
+                        this.$toast.success(this.$store.state.translations.global_success);
                     }
                 })
                 .catch((error) => {
+                    if (error.response.data['error'] != null) {
+                        this.$toast.error(error.response.data['error']);
+                    } else {
+                        this.$toast.error(error);
+                    }
                     console.log(error);
                 });
             },

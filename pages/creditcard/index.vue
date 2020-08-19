@@ -84,15 +84,16 @@
                 this.$axios.$post('/api.php?method=cards&action=add', this.data)
                 .then((response) => {
                     if (response['message'] == 'success') {
-                        this.$toast.error(this.$store.state.translations.global_success);
+                        this.$toast.success(this.$store.state.translations.global_success);
                         this.$router.push({ path: '/personalinfo' });
-                    }
-
-                    if (response['error'] != null) {
-                        this.$toast.error(response['error']);
                     }
                 })
                 .catch((error) => {
+                    if (error.response.data['error'] != null) {
+                        this.$toast.error(error.response.data['error']);
+                    } else {
+                        this.$toast.error(error);
+                    }
                     console.log(error);
                 });
             },

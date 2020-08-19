@@ -58,18 +58,15 @@
                     this.$axios.$post('/api.php?method=register', this.form)
                     .then((response) => {
                         if (response['message'] == 'success') {
-                            this.$auth.loginWith('local', {data: this.form}).then((response) => {
-                                if (response.data.error != null) {
-                                    this.$toast.error(response.data.error);
-                                }
-                            });
-                        }
-
-                        if (response['error'] != null) {
-                            this.$toast.error(response['error']);
+                            this.$auth.loginWith('local', {data: this.form});
                         }
                     })
                     .catch((error) => {
+                        if (error.response.data['error'] != null) {
+                            this.$toast.error(error.response.data['error']);
+                        } else {
+                            this.$toast.error(error);
+                        }
                         console.log(error);
                     });
                 } catch (error) {
