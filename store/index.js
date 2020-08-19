@@ -3,7 +3,7 @@ export const state = () => ({
     timezone: null,
     translations: {},
     balance: null,
-    deposit: null
+    deposit: null,
 })
 
 export const mutations = {
@@ -34,14 +34,22 @@ export const getters = {
     balance(state) {
         return state.balance
     },
-    deposit(stete) {
+    deposit(state) {
         return state.deposit
     }
 };
 
 export const actions = {
     async nuxtServerInit({ commit }) {
-        let {data} = await this.$axios.$post('/api/translations');
+        let {data} = await this.$axios.$get('/api/translations');
         commit('SET_TRANSLATIONS', data)
+    },
+    async setBalance({ commit }) {
+        let {data} = await this.$axios.$get('/api/money/?action=balance');
+        commit('SET_BALANCE', data)
+    },
+    async setDeposit({ commit }) {
+        let {data} = await this.$axios.$get('/api/money/?action=deposit');
+        commit('SET_DEPOSIT', data)
     }
 }

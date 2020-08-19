@@ -29,6 +29,7 @@
 <script>
     import header_header from '~/components/global/header.vue'
     import footer_footer from '~/components/global/footer.vue'
+    import { mapActions } from 'vuex';
 
     export default {
         components: {
@@ -63,6 +64,9 @@
                     if (response['message'] == 'success') {
                         this.$toast.success(this.$store.state.translations.global_success);
 
+                        this.setBalance();
+                        this.setDeposit();
+
                         this.$axios.$get('/api/libra/').then((response) => {
                             if (response['message'] == 'success') {
                                 this.data.balance = (!response.empty)?response.data : 0;
@@ -74,18 +78,28 @@
                             }
                         })
                         .catch((error) => {
+                            if (error.response.data['error'] != null) {
+                                this.$toast.error(error.response.data['error']);
+                            } else {
+                                this.$toast.error(error);
+                            }
                             console.log(error);
                         });
                     }
-
-                    if (response['error'] != null) {
-                        this.$toast.error(response['error']);
-                    }
                 })
                 .catch((error) => {
+                    if (error.response.data['error'] != null) {
+                        this.$toast.error(error.response.data['error']);
+                    } else {
+                        this.$toast.error(error);
+                    }
                     console.log(error);
                 });
             },
+            ...mapActions({
+                setBalance: 'setBalance',
+                setDeposit: 'setDeposit',
+            })
         }
     }
 </script>

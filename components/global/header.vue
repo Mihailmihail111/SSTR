@@ -17,6 +17,14 @@
                         </ul>
                     </client-only>
                 </nav>
+                <nav>
+                    <client-only>
+                        <ul v-if="isAuthenticated" class="flex flex_m flex_sb">
+                            <li><div style="color: white;"><p>Баланс</p>{{balance}}</div></li>
+                            <li><div style="color: white;"><p>Депозит</p>{{deposit}}</div></li>
+                        </ul>
+                    </client-only>
+                </nav>
             </div>
         </div>
     </header>
@@ -27,10 +35,11 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import { mapActions } from 'vuex';
 
 export default {
     computed: {
-        ...mapGetters(['isAuthenticated', 'loggedInUser'])
+        ...mapGetters(['isAuthenticated', 'loggedInUser','balance','deposit'])
     },
     data() {
         return{
@@ -40,11 +49,24 @@ export default {
     methods: {
         updateScroll() {
             this.scrollPosition = window.scrollY
-        }
+        },
+        ...mapActions({
+            setBalance: 'setBalance',
+            setDeposit: 'setDeposit',
+        })
     },
 
-    mounted() {
+    async mounted() {
         window.addEventListener('scroll', this.updateScroll);
+        
+        if (this.isAuthenticated) {
+            if (this.balance == null) {
+                    this.setBalance();
+            }
+            if (this.deposit == null) {
+                    this.setDeposit();
+            }
+        }
     }
 
 };
