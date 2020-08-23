@@ -6,28 +6,40 @@
                     <swiper-slide >
                         <div class="main_slider">
                             <div class="main_slider_img">
-                                <img src="@/assets/images/main_img.jpg" alt="">
+                                <picture>
+									<source srcset="@/assets/images/main_img.webp" type="image/webp">
+									<img src="@/assets/images/main_img.jpg" alt="">
+								</picture>
                             </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
                         <div class="main_slider">
                             <div class="main_slider_img">
-                                <img src="@/assets/images/main_img2.jpg" alt="">
+                                <picture>
+									<source srcset="@/assets/images/main_img2.webp" type="image/webp">
+									<img src="@/assets/images/main_img2.jpg" alt="">
+								</picture>
                             </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
                         <div class="main_slider">
                             <div class="main_slider_img">
-                                <img src="@/assets/images/main_img3.jpg" alt="">
+                                <picture>
+									<source srcset="@/assets/images/main_img3.webp" type="image/webp">
+									<img src="@/assets/images/main_img3.jpg" alt="">
+								</picture>
                             </div>
                         </div>
                     </swiper-slide>
                     <swiper-slide >
                         <div class="main_slider">
                             <div class="main_slider_img">
-                                <img src="@/assets/images/main_img4.jpg" alt="">
+                                <picture>
+									<source srcset="@/assets/images/main_img4.webp" type="image/webp">
+									<img src="@/assets/images/main_img4.jpg" alt="">
+								</picture>
                             </div>
                         </div>
                     </swiper-slide>

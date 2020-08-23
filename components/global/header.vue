@@ -1,6 +1,6 @@
 <template>
 
-<div class="header_wrap" :class="{fix: scrollPosition > 100}">
+<div class="header_wrap fix">
     <div class="header_fix"></div>
     <header>
         <div class="inside">

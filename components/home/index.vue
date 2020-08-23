@@ -71,7 +71,7 @@
             position: absolute;
             width: 100%;
             height: 190px;
-            background: linear-gradient(1.03deg, #171717 6.51%, rgba(23, 23, 23, 0.56) 49.52%, rgba(0, 0, 0, 0) 93.28%);
+            background: linear-gradient(0.22deg, #0F0F0F 1.14%, rgba(0, 0, 0, 0) 42.99%);
             transform: rotate(180deg);
         }
         &::after{
@@ -81,7 +81,7 @@
             position: absolute;
             width: 100%;
             height: 190px;
-            background: linear-gradient(1.03deg, #171717 6.51%, rgba(23, 23, 23, 0.56) 49.52%, rgba(0, 0, 0, 0) 93.28%);
+            background: linear-gradient(2.07deg, #000000 6.51%, rgba(0, 0, 0, 0.56) 49.52%, rgba(0, 0, 0, 0) 93.28%);
         }
     }
     .main_slider_text{
@@ -99,7 +99,7 @@
     }
 
     #what_sstr_section{
-        padding: 75px 0;
+        padding: 130px 0;
         padding-bottom: 40px;
         .inside{
             padding: 0;
@@ -109,8 +109,8 @@
     .what_sstr_slider_wrap{
         margin-top: 41px;
         box-sizing: border-box;
-        border-top: 4px solid #1D1D1D;
-        border-bottom: 4px solid #1D1D1D;
+        border-top: 4px solid #424242;
+        border-bottom: 4px solid #424242;
         padding: 15px 0 !important;
         .swiper-slide{
             width: 200px;
@@ -173,8 +173,8 @@
         margin-top: 12px;
         margin-bottom: 4px;
         .swiper_pagination{
-            margin-top: 41px;
-            margin-bottom: 35px;
+            margin-top: 23px;
+            margin-bottom: 32px;
         }
         .swiper-pagination-bullet{
             margin: 0 5px !important;
@@ -196,7 +196,7 @@
     }
     .swiper-pagination-bullet{
         opacity: 1;
-        background: #424242 !important;
+        background: #828282 !important;
     }
     .swiper-pagination-bullet-active{
         background: #fff !important;
@@ -306,11 +306,10 @@
 
     .reviews_slider_wrap, .news_slider_wrap{
         box-sizing: border-box;
-        border-top: 4px solid #1D1D1D;
-        border-bottom: 4px solid #1D1D1D;
-        padding: 14px 0;
-        padding-bottom: 17px;
-        margin-top: 17px;
+        border-top: 4px solid #424242;
+        border-bottom: 4px solid #424242;
+        padding: 1px 0;
+        margin-top: 40px;
         .swiper-slide{
             width: 100px;
         }
@@ -358,7 +357,7 @@
     }
 
     #libra_section{
-        padding-top: 84px;
+        padding-top: 60px;
     }
 
     .libra_wrap{
@@ -416,16 +415,16 @@
     }
 
     .news_slider_wrap{
-        margin-top: 32px;
+        margin-top: 40px;
     }
 
     #partners_section{
-        padding-top: 54px;
-        padding-bottom: 79px;
+        padding-top: 45px;
+        padding-bottom: 92px;
     }
 
     .partners_img{
-        margin-top: 72px;
+        margin-top: 58px;
         padding-bottom: 15px;
         background: url(~@/assets/images/partners_bg_logo.svg) no-repeat center;
     }

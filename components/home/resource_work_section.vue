@@ -9,7 +9,10 @@
                             <div class="resource_work_slide_h1"><p></p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img1.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img1.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img1.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -19,7 +22,10 @@
                             <div class="resource_work_slide_h1"><p>Результаты ставок</p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img2.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img2.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img2.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -29,7 +35,10 @@
                             <div class="resource_work_slide_h1"><p>Currency exchange</p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img3.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img3.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img3.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -39,7 +48,10 @@
                             <div class="resource_work_slide_h1"><p>Money transfers</p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img4.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img4.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img4.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -49,7 +61,10 @@
                             <div class="resource_work_slide_h1"><p>Нами уже зарезервировано 0,2531697%, акций Libra</p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img5.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img5.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img5.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -59,7 +74,10 @@
                             <div class="resource_work_slide_h1"><p>Выплатная таблица дивидендов нашим Ационерам & Инвесторам</p></div>
                             <div class="resource_work_slide_img">
                                 <a href="">
-                                    <img src="@/assets/images/resource_work_img6.jpg" alt="">
+                                    <picture>
+                                        <source srcset="@/assets/images/resource_work_img6.webp" type="image/webp">
+                                        <img src="@/assets/images/resource_work_img6.jpg" alt="">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
