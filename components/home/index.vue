@@ -184,6 +184,7 @@
         img{
             max-width: 100%;
             border-radius: 8px;
+            
         }
     }
     .resource_work_slide_h1{
