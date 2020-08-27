@@ -17,6 +17,8 @@
 
 <style lang="scss">
     .card_page{
+        width: 100%;
         padding: 25px 0;
+        background: url(~@/assets/images/card_bg.jpg) no-repeat center 0;
     }
 </style>

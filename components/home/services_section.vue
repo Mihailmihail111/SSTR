@@ -2,7 +2,7 @@
     <section id="services_section">
         <div class="inside">
             <div class="services_section">
-                <div class="title_h1"><p>Услуги и возможности которие предоставляет наш ресурс</p></div>
+                <div class="title_h1"><p>Услуги и возможности которые предоставляет наш ресурс</p></div>
                 <div class="services_wrap">
                     <div class="services_item">
                         <div class="services_icon flex flex_c flex_m">

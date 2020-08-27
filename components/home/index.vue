@@ -315,7 +315,7 @@
             width: 100px;
         }
         .swiper-wrapper{
-            padding: 15px 15px;
+            padding: 15px 0px;
         }
     }
 
