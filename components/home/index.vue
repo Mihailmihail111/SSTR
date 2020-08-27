@@ -54,7 +54,7 @@
 
 <style lang="scss">
     #main_section{
-        margin-top: -1px;
+        margin-top: -2px;
         .inside{
             padding: 0;
         }
