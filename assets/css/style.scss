@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-  width: 375px;
+  width: 440px;
   margin: 0 auto;
   overflow: hidden;
   max-width: 100%;
@@ -27,7 +27,7 @@ body {
 }
 
 .inside {
-  width: 375px;
+  width: 440px;
   max-width: 100%;
   padding: 0 15px;
   text-align: center;
@@ -217,4 +217,8 @@ section {
   color: #FFFFFF;
   box-sizing: border-box;
   padding: 0 25px;
+}
+
+.swiper-pagination-bullet{
+  opacity: 1 !important;
 }

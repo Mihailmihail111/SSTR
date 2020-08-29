@@ -18,7 +18,7 @@ body.no_scroll {
 }
 
 .wrapper {
-  width: 375px;
+  width: 440px;
   margin: 0 auto;
   overflow: hidden;
   max-width: 100%;
@@ -27,13 +27,13 @@ body.no_scroll {
 }
 
 .inside {
-  width: 375px;
+  width: 440px;
   max-width: 100%;
   padding: 0 15px;
   text-align: center;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .inside.inside_full {

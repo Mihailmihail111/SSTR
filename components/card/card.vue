@@ -121,7 +121,7 @@
         perspective: 1000px;
         box-sizing: border-box;
         padding: 1px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.8));
         &.active{
             .card_front{

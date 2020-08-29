@@ -54,7 +54,7 @@
 
 <style lang="scss">
     #main_section{
-        margin-top: -2px;
+        padding-top: 0;
         .inside{
             padding: 0;
         }
@@ -64,7 +64,7 @@
     }
     .main_slider{
         position: relative;
-        &::before{
+        /*&::before{
             content: "";
             left: 0;
             top: 0;
@@ -82,7 +82,7 @@
             width: 100%;
             height: 190px;
             background: linear-gradient(2.07deg, #000000 6.51%, rgba(0, 0, 0, 0.56) 49.52%, rgba(0, 0, 0, 0) 93.28%);
-        }
+        }*/
     }
     .main_slider_text{
         font-size: 32px;
@@ -436,9 +436,7 @@
 
     .main_slider_img{
         img{
-            height: 330px;
-            width: 100%;
-            object-fit: cover;
+            max-width: 100%;
         }
     }
 
