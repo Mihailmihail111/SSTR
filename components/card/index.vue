@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper card_page">
         <div class="inside">
-            <card/>
+            <card :cardType="cardType" />
         </div>
     </div>
 </template>
@@ -9,9 +9,10 @@
 <script>
     import card from '~/components/card/card.vue'
     export default {
-		components: {
-			card,
-    	}
+    components: {
+      card,
+        },
+        props: ['cardType'],
     };
 </script>
 
