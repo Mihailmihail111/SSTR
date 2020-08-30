@@ -1,71 +1,12 @@
 <template>
-    <div class="card_wrap">
-        <div class="card" :class="{'active': isActive}" @click="cart_rotate">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
+    <div class="card card1" :class="{'active': isActive}" @click="cart_rotate">
+        <div class="card_front flex flex_b">
+            <div class="card_nick_front"><p>mr.Nickname</p></div>
         </div>
-        <div class="card card1" :class="{'active': isActive1}" @click="cart_rotate1">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card2" :class="{'active': isActive2}" @click="cart_rotate2">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card3" :class="{'active': isActive3}" @click="cart_rotate3">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card4" :class="{'active': isActive4}" @click="cart_rotate4">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card5" :class="{'active': isActive5}" @click="cart_rotate5">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card6" :class="{'active': isActive6}" @click="cart_rotate6">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
-        </div>
-        <div class="card card7" :class="{'active': isActive7}" @click="cart_rotate7">
-            <div class="card_front flex flex_b">
-                <div class="card_nick_front"><p>mr.Nickname</p></div>
-            </div>
-            <div class="card_back">
-                <div class="card_nick_back"><p>mr.Nickname</p></div>
-            </div>
+        <div class="card_back">
+            <div class="card_nick_back"><p>mr.Nickname</p></div>
         </div>
     </div>
-    
 </template>
 
 <script>
@@ -73,39 +14,11 @@
         data() {
             return{
                 isActive: false,
-                isActive1: false,
-                isActive2: false,
-                isActive3: false,
-                isActive4: false,
-                isActive5: false,
-                isActive6: false,
-                isActive7: false,
             }
         },
         methods: {
             cart_rotate() {
                 this.isActive = !this.isActive;
-            },
-            cart_rotate1() {
-                this.isActive1 = !this.isActive1;
-            },
-            cart_rotate2() {
-                this.isActive2 = !this.isActive2;
-            },
-            cart_rotate3() {
-                this.isActive3 = !this.isActive3;
-            },
-            cart_rotate4() {
-                this.isActive4 = !this.isActive4;
-            },
-            cart_rotate5() {
-                this.isActive5 = !this.isActive5;
-            },
-            cart_rotate6() {
-                this.isActive6 = !this.isActive6;
-            },
-            cart_rotate7() {
-                this.isActive7 = !this.isActive7;
             },
         },
     };
