@@ -283,12 +283,14 @@ section {
       font-family: "Roboto Mono";
   }
 }
+.card_back{
+  transform: rotateY(180deg);
+}
 .card0{
 .card_front{
     background: url(~@/assets/images/card/card_front.svg) no-repeat center 0;
   }
   .card_back{
-    transform: rotateY(180deg);
     background: url(~@/assets/images/card/card_back.svg) no-repeat center 0;
   }
 }
